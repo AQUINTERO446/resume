@@ -1,0 +1,662 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	<title>Andrés Quintero Galván</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		/* Utils */
+/*----- Colors -----*/
+/*----- Fonts -----*/
+/*----- Dimensions and sizes -----*/
+/* Base */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v13/Qw3FZQNVED7rKGKxtqIqX5Ecpl5te10k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v13/Qw3FZQNVED7rKGKxtqIqX5Ectllte10k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI9w2_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwfo.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background: #f8f8f8;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: #222933; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  margin: 0; }
+
+h1 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1px; }
+
+h2 {
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: .5px; }
+
+h3 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: .4px; }
+  h3.bold {
+    font-weight: 700; }
+
+h4 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px; }
+  h4.bold {
+    font-weight: 700; }
+
+h5 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 11px; }
+  h5.italic {
+    font-style: italic; }
+
+h6 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+  a:hover {
+    color: #ec700a; }
+  a .fa-external-link {
+    font-size: 10px;
+    vertical-align: text-top; }
+
+p,
+li {
+  font-size: 11px; }
+
+blockquote {
+  font-size: 11px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 10px 25px; }
+
+em {
+  color: #999; }
+
+ul {
+  margin: 10px 0 0;
+  -webkit-padding-start: 25px; }
+  ul li {
+    padding-left: 10px; }
+  ul.minimal {
+    list-style: none;
+    padding: 0; }
+    ul.minimal li {
+      margin-bottom: 3px;
+      padding-left: 0; }
+  ul.two-column {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 28px;
+    column-count: 2;
+    column-gap: 28px; }
+    ul.two-column li {
+      padding-left: 0; }
+
+@page {
+  size: A4; }
+
+.container {
+  padding-top: 20px; }
+
+.keyline {
+  width: 45px;
+  margin: 8px 0 10px;
+  border-top: 1px solid #e36c09; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.profile-pic {
+  margin-top: -5px;
+  margin-right: 18px; }
+  .profile-pic img {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    border: 2px solid #e36c09; }
+
+.summary {
+  margin: 5px 0 5px; }
+
+/* Layouts */
+.page {
+  background: white;
+  width: 612px;
+  min-height: 792px;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid #e36c09;
+  padding: 36px 22px 30px 34px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+  .page:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.left-column {
+  float: left;
+  width: 160px;
+  margin-right: 20px;
+  word-wrap: break-word; }
+
+.right-column {
+  width: auto;
+  overflow: hidden; }
+
+.item {
+  margin-bottom: 15px; }
+  .item:last-child {
+    margin-bottom: 0; }
+
+@media print {
+  body {
+    margin: 0; }
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 36px 0 30px;
+    box-shadow: none; }
+    .page .resume-header,
+    .page .resume-content {
+      padding: 0 22px 0 34px; }
+  .container {
+    page-break-inside: avoid; }
+  .work-container .item {
+    page-break-inside: avoid; }
+  .fa-external-link {
+    display: none; } }
+
+/* Components */
+.info-tag-container {
+  margin-bottom: 5px; }
+  .info-tag-container .fa {
+    font-size: 14px;
+    width: 12px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: middle; }
+    .info-tag-container .fa.fa-map-marker {
+      font-size: 16px; }
+    .info-tag-container .fa.fa-mobile {
+      font-size: 18px; }
+    .info-tag-container .fa.fa-envelope-o {
+      font-size: 12px; }
+    .info-tag-container .fa.fa-desktop {
+      font-size: 11px; }
+    .info-tag-container .fa.fa-external-link {
+      width: auto;
+      font-size: inherit;
+      vertical-align: text-top; }
+  .info-tag-container .info-text {
+    font-size: 9px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 139px; }
+
+.references-container .fa {
+  font-size: 14px; }
+
+.education-container .location {
+  padding-bottom: 6px;
+  font-weight: 400; }
+
+.education-container .specialization {
+  text-transform: none;
+  font-style: italic; }
+
+	</style>
+	</head>
+	<body>
+		<main id="resume" class="page">
+			<header class="resume-header clearfix">
+			    <div class="profile-header pull-left">
+			        <h1>Andrés Quintero Galván</h1>
+			        <h2>Full Stack Developer</h2>
+			    </div>
+			    <div class="profile-pic pull-right">
+			        <img src="IMG_3204.jpg" alt="profile-pic">
+			    </div>
+			</header>
+			<div class="resume-content">
+				<aside class="left-column">
+					<div class="container about-container">
+					    <div class="title">
+					        <h3>About</h3>
+					        <div class="keyline"></div>
+					    </div>
+					        <div class="info-tag-container">
+					            <i class="fa fa-map-marker"></i>
+					        
+					                <h6 class="info-text">Bucaramanga Santander 680006</h6>
+					        </div>
+					        <div class="info-tag-container">
+					            <i class="fa fa-envelope-o"></i>
+					        
+					                <h6 class="info-text">aquintero446@gmail.com</h6>
+					        </div>
+					        <div class="info-tag-container">
+					            <i class="fa fa-mobile"></i>
+					        
+					                <h6 class="info-text">(57) 320 322 3347</h6>
+					        </div>
+					
+					                         <div class="info-tag-container">
+					                             <i class="fa fa-github"></i>
+					                         
+					                                 <h6 class="info-text">
+					                                     <a href="https://github.com/AQUINTERO446" target="_blank">
+					                                         aquintero446 <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                     </a>
+					                                 </h6>
+					                         </div></section>
+					    <div class="skills-container">
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Web Development</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Grav CMS</h6></li>
+					                            <li><h6>HTML</h6></li>
+					                            <li><h6>CSS</h6></li>
+					                            <li><h6>Javascript</h6></li>
+					                            <li><h6>PHP</h6></li>
+					                            <li><h6>Django</h6></li>
+					                            <li><h6>Angular</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Backend</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Go</h6></li>
+					                            <li><h6>Ngnx</h6></li>
+					                            <li><h6>PHP</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Version Control System</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Git</h6></li>
+					                            <li><h6>GitHub</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Mobile</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <h4 class="bold">Master</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Xamarin Forms</h6></li>
+					                            <li><h6>Android</h6></li>
+					                            <li><h6>IOS</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>ASP.NET</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <ul class="minimal">
+					                            <li><h6>MVVM</h6></li>
+					                            <li><h6>Entity Framework 6</h6></li>
+					                            <li><h6>NuGet package development</h6></li>
+					                            <li><h6>Binary Bindings</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Computer Vision</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <h4 class="bold">Beginner</h4>
+					                    <ul class="minimal">
+					                            <li><h6>OCR</h6></li>
+					                    </ul>
+					            </section>
+					            <section class="container">
+					                    <div class="title">
+					                        <h3>Blockchain</h3>
+					                        <div class="keyline"></div>
+					                    </div>                    <h4 class="bold">Beginner</h4>
+					                    <ul class="minimal">
+					                            <li><h6>Solidity</h6></li>
+					                            <li><h6>Ethereum</h6></li>
+					                            <li><h6>Parity</h6></li>
+					                    </ul>
+					            </section>
+					    </div>
+					    <div class="container languages-container">
+					        <div class="title">
+					            <h3>Languages</h3>
+					            <div class="keyline"></div>
+					        </div>
+					        <ul class="minimal">
+					                <li>
+					                    <h6>English <em>(Professional working proficiency)</em></h6>
+					                </li>
+					                <li>
+					                    <h6>Spanish <em>(Native)</em></h6>
+					                </li>
+					        </ul>
+					    </div>
+					    <div class="container interests-container">
+					        <div class="title">
+					            <h3>Interests</h3>
+					            <div class="keyline"></div>
+					        </div>
+					            <section class="item">
+					                    <h4 class="bold">Sports</h4>
+					                    <ul class="minimal">
+					                            <li>Hiking</li>
+					                            <li>Basketball</li>
+					                            <li>Bycicle</li>
+					                    </ul>
+					            </section>
+					    </div>
+				</aside>
+				<div class="right-column">
+					        <div class="container summary-container">
+					            <div class="title">
+					                <h3>Summary</h3>
+					                <div class="keyline"></div>
+					            </div>            <p class="summary">
+					                I am a Full Stack Developer, familiar with agile methodologies and collaborative work. I have experience development of Web pages and Web apps with MVC and MVVM design patterns. I am characterized to be a fast learner with a willingness to learn new technologies and acquire new skills every day.
+					            </p>
+					        </div>
+					<div class="container work-container">
+					    <div class="title">
+					        <h3>Experience</h3>
+					        <div class="keyline"></div>
+					    </div>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://megatrade-global.com/" target="_blank">
+					                            Megatrade Global S.A.S <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                        <span class="startDate">02/2019</span>
+					                        <span class="endDate"> - Present</span>
+					                </h5>
+					            </div>
+					            <h4>Web Development</h4>
+					
+					            <p class="summary">Freelancer developer building websites and custom solutions for companies</p>
+					
+					            <ul>
+					                <li>Responsive Website for customs formalities company using Grav CMS and Bootstrap for CSS style sheet.</li>
+					            </ul>
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://abogados-indemnizaciones.com/" target="_blank">
+					                            Abogados en Indemnizaciones <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                        <span class="startDate">04/2019</span>
+					                        <span class="endDate"> - Present</span>
+					                </h5>
+					            </div>
+					            <h4>Web Development</h4>
+					
+					            <p class="summary">Freelancer developer building websites and custom solutions for companies</p>
+					
+					            <ul>
+					                <li>Responsive Website for civil responsibility process firm  web chat integration built with Grav CMS and Bootstrap for CSS style sheet.</li>
+					            </ul>
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="http://www.appdeit.com" target="_blank">
+					                            Appdeit <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                        <span class="startDate">07/2018</span>
+					                        <span class="endDate"> - 04/2019</span>
+					                </h5>
+					            </div>
+					            <h4>Software Developer</h4>
+					
+					            <p class="summary">Full Stack developer for computer vision applications and blockchain Dapps.</p>
+					
+					            <ul>
+					                <li>API Rest on Django for OCR over identity documents like licenses, library id&#x27;s and personal id&#x27;s using Python and OpenCV library.</li>
+					                <li>API Rest on Golang with MVC design&#x27;s patron for saving secured information with AES254 encryption on blockchain private network running on docker.</li>
+					                <li>Cross-platform application for Android and IOS with API Rest communication, MVVC design&#x27;s patron and built-in .Net with Xamarin Forms framework</li>
+					            </ul>
+					        </section>
+					        <section class="item">
+					            <div class="section-header clearfix">
+					                <h3 class="bold pull-left">
+					                        <a href="https://github.com/AQUINTERO446" target="_blank">
+					                            Freelancer <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+					                <h5 class="italic pull-right">
+					                        <span class="startDate">02/2017</span>
+					                        <span class="endDate"> - Present</span>
+					                </h5>
+					            </div>
+					            <h4>Software Developer</h4>
+					
+					            <p class="summary">Freelancer developer building websites and custom solutions for companies</p>
+					
+					            <ul>
+					                <li>.Net API Rest application and Cross-platform Android and IOS mobile application for Geolocalization emergency calls between users and healthcare providers</li>
+					            </ul>
+					        </section>
+					</div>
+					<div class="container education-container">
+					    <div class="title">
+					    <h3>Education</h3>
+					    <div class="keyline"></div>
+					</div> 
+					    <section class="item">
+					        <div class="section-header clearfix">
+					    <h3 class="bold pull-left">
+					            W3Schools
+					    </h3>
+					    <h5 class="italic pull-right">
+					            <span class="startDate">02/2018</span>
+					            <span class="endDate"> - 08/2018</span>
+					    </h5>
+					</div> 
+					        <h5 class="location">Online</h5>
+					
+					        <h4>Conclusion Web Development</h4>
+					
+					  
+					        <ul class="two-column">
+					            <li>HTML</li>
+					            <li>CSS</li>
+					            <li>JavaScript</li>
+					            <li>PHP</li>
+					        </ul>
+					    </section>
+					
+					    <section class="item">
+					        <div class="section-header clearfix">
+					    <h3 class="bold pull-left">
+					            Platzi
+					    </h3>
+					    <h5 class="italic pull-right">
+					            <span class="startDate">07/2018</span>
+					            <span class="endDate"> - 02/2019</span>
+					    </h5>
+					</div> 
+					        <h5 class="location">Online</h5>
+					
+					        <h4>Certification Software Developer</h4>
+					
+					  
+					        <ul class="two-column">
+					            <li>Git and Github Profesional Course</li>
+					            <li>Ionic Basic Course</li>
+					            <li>SQL and MySQL course</li>
+					            <li>Docker basics</li>
+					            <li>Fundamentals of Google Cloud Platform by Xertica</li>
+					            <li>Introduction to Terminal and Command Line</li>
+					        </ul>
+					    </section>
+					
+					    <section class="item">
+					        <div class="section-header clearfix">
+					    <h3 class="bold pull-left">
+					            Sololearn
+					    </h3>
+					    <h5 class="italic pull-right">
+					            <span class="startDate">07/2017</span>
+					            <span class="endDate"> - 08/2017</span>
+					    </h5>
+					</div> 
+					        <h5 class="location">Online</h5>
+					
+					        <h4>Certification Software Developer</h4>
+					
+					  
+					        <ul class="two-column">
+					            <li>Python 3</li>
+					        </ul>
+					    </section>
+					
+					    <section class="item">
+					        <div class="section-header clearfix">
+					    <h3 class="bold pull-left">
+					            Platzi
+					    </h3>
+					    <h5 class="italic pull-right">
+					            <span class="startDate">07/2018</span>
+					            <span class="endDate"> - 02/2019</span>
+					    </h5>
+					</div> 
+					        <h5 class="location">Online</h5>
+					
+					        <h4>Certification Blockchain</h4>
+					
+					  
+					        <ul class="two-column">
+					            <li>Bitcoin and Blockchain</li>
+					            <li>Investment Course in Cryptocurrencies</li>
+					        </ul>
+					    </section>
+					
+					    <section class="item">
+					        <div class="section-header clearfix">
+					    <h3 class="bold pull-left">
+					            ESDISEÑOS
+					    </h3>
+					    <h5 class="italic pull-right">
+					            <span class="startDate">12/2007</span>
+					            <span class="endDate"> - 12/2008</span>
+					    </h5>
+					</div> 
+					        <h4>Análisis y Programación de Sistemas Software Developer</h4>
+					
+					      </section>
+					</div>
+					<div class="container references-container">
+					    <div class="title">
+					        <h3>References</h3>
+					        <div class="keyline"></div>
+					    </div>
+					        <section class="item clearfix">
+					            <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+					            <blockquote>
+					                There are some people who focus on machine learning, others on computer vision, others on different programming languages and some who focus on bitcoin and blockchain; but, with a mixture of deductive and inductive analysis, Andres manages it all in an amazing way, this perform excellent results according to your needs.
+					            </blockquote>
+					
+					            <h5 class="pull-right"> — Andres Cabanzo - Red Nacional Jovenes por el Ambiente</h5>
+					        </section>
+					        <section class="item clearfix">
+					            <i class="fa fa-quote-left pull-left" aria-hidden="true"></i>
+					            <blockquote>
+					                Andres has great abilities to solve problems, along with his outstanding programming skills, make him capable to face any challenge and bring a complete solution in software development and similar areas.
+					            </blockquote>
+					
+					            <h5 class="pull-right"> — Alberto Andrés Martínez Vesga - Electrificadora de Santander ESSA ESP</h5>
+					        </section>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
